@@ -1,0 +1,8 @@
+.dashboard-card {
+    h1 {
+        @apply mt-3 text-3xl font-medium;
+    }
+    .card__content {
+        @apply flex w-full p-[3rem] flex-wrap gap-[3rem];
+    }
+}

@@ -1,0 +1,68 @@
+.card {
+    @apply max-w-[25rem] w-[25%] bg-white rounded-lg p-5 mt-5;
+
+    &__col {
+        @apply flex items-start gap-3;
+
+        input[type="radio"] {
+            @apply w-7 h-7;
+            accent-color: #306f82;
+        }
+
+        h3 {
+            @apply text-xl font-bold
+        }
+
+        .price {
+            @apply font-bold text-[2rem];
+        }
+
+        .prime p {
+            @apply flex items-center text-cyan-800 font-bold;
+        }
+
+        .delivery-details {
+            span {
+                @apply font-bold;
+            }
+
+            p:nth-child(2) {
+                span {
+                    @apply text-green-700
+                }
+            }
+        }
+
+        .delivery-location {
+            @apply flex my-2;
+
+            p {
+                @apply ml-2 text-blue-600 font-bold
+            }
+        }
+
+        .quantity {
+            p {
+                @apply text-green-800 font-bold;
+            }
+
+            select {
+                @apply border-2 rounded-lg
+            }
+        }
+    }
+
+    &__action {
+        button {
+            @apply block text-center w-full py-1 text-white text-lg rounded-lg;
+
+            &:nth-child(1) {
+                @apply bg-zinc-800 mt-5;
+            }
+
+            &:nth-child(2) {
+                @apply bg-blue-600 mt-2;
+            }
+        }
+    }
+}

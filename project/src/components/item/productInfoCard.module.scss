@@ -1,0 +1,28 @@
+.card {
+    @apply mt-5 bg-white rounded-lg border-b border-b-[3rem] border-[#f9fafb] w-[65%] max-w-[80rem];
+
+    &__header {
+       @apply border-b p-5;
+       p {
+        @apply text-lg font-medium;
+       }
+       span {
+        @apply text-sm text-gray-500;
+       }
+    }
+
+    &__content {
+        @apply p-5;
+
+        .card__row {
+            @apply flex mb-5;
+            p:nth-child(1),  &--full p:nth-child(1) {
+                @apply  text-gray-500;
+            }
+            &__content {
+                @apply w-1/2
+            }
+        }
+    }
+
+}

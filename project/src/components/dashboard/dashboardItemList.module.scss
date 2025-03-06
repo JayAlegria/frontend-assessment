@@ -1,0 +1,32 @@
+.itemList {
+    @apply table-fixed w-full text-left font-medium;
+
+    td,
+    th {
+        @apply py-2
+    }
+
+    thead {
+        @apply border-b-2;
+    }
+
+    tbody {
+        
+        tr {
+            &:not(.loader) {
+                @apply border-b cursor-pointer;
+            }
+        }
+        td:not(.loader td):first-child {
+            @apply flex items-center;
+
+            img {
+                @apply h-10 w-10 mr-3 rounded-[50%];
+            }
+        }
+
+        td:last-child {
+            @apply text-red-500;
+        }
+    }
+}

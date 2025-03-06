@@ -1,0 +1,13 @@
+.page-container {
+    @apply max-h-[100vh];
+
+    &--isAside {
+        @apply flex
+    }
+    .page-bg {
+        @apply bg-gray-800 h-[20rem] w-full absolute top-0 z-[-1];
+    }
+    .page-content {
+        @apply p-5 w-full max-h-[100vh] overflow-x-hidden;
+    }
+}

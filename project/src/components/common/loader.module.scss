@@ -1,0 +1,7 @@
+.loader {
+    @apply flex justify-center items-center py-4 w-full mt-10;
+
+    img {
+        @apply h-8 w-8 mx-auto;
+    }
+}

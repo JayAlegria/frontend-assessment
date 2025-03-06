@@ -1,0 +1,44 @@
+.navbar {
+    @apply px-10 py-3 text-white;
+
+    &__links {
+        @apply flex justify-between flex items-center;
+
+
+        a {
+            @apply block px-3 py-2 rounded flex items-center text-white;
+
+            &:first-child {
+                margin-right: 30px;
+
+                img {
+                    @apply w-[30px] h-[30px];
+                }
+            }
+
+            &:not(:first-child) {
+                margin-right: 20px;
+            }
+        }
+    }
+
+    &__inner {
+        @apply flex justify-between border-b border-gray-600 pb-3;
+    }
+
+    &__links {
+        @apply flex items-center;
+    }
+
+    &__profile {
+        @apply flex items-center;
+
+        img {
+            @apply w-8 h-8 rounded-[50%];
+        }
+
+        a:nth-child(1) {
+            margin-right: 10px;
+        }
+    }
+}

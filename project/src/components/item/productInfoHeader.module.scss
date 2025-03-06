@@ -1,0 +1,15 @@
+.product {
+    &__image {
+        @apply flex gap-4 items-center text-xs;
+
+        img {
+            @apply w-10 h-10 rounded-[50%]
+        }
+        p {
+            @apply font-medium text-lg
+        }
+        span {
+            @apply text-xs
+        }
+    }
+}

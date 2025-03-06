@@ -1,0 +1,38 @@
+.aside {
+    @apply w-[15rem] h-[100vh] bg-gray-800 flex flex-col justify-between;
+
+    &__links {
+        @apply flex flex-col;
+
+        a {
+            @apply block px-3 py-2 rounded flex items-center text-white;
+
+            &:first-child {
+               @apply ml-3 px-3;
+
+                img {
+                    @apply w-[30px] h-[30px];
+                }
+            }
+        }
+        :global {
+            svg {
+                @apply h-5 w-5 mr-3;
+            }
+        }
+    }
+
+    &__profile {
+        @apply flex bg-gray-700 p-3 text-white items-center;
+
+        img {
+            @apply h-10 w-10 rounded-[50%] mr-3;
+        }
+        .info {
+          @apply  text-xs;
+           span {
+            @apply text-xs font-light;
+           }
+        }
+    }
+}

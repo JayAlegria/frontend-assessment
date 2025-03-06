@@ -1,0 +1,25 @@
+.dashboard-list {
+    @apply p-10;
+    h1 {
+        @apply text-white mb-10 text-3xl font-medium;
+    }
+    .card {
+        @apply w-full bg-white rounded-[10px] px-10 py-5;
+        &__header {
+            @apply flex justify-between items-center;
+        }
+        &__intro {
+            @apply mb-10;
+            p {
+                &:nth-child(1) {
+                    @apply font-medium text-lg
+                }
+            }
+        }
+        &__actions {
+            button {
+                @apply rounded bg-indigo-700 px-3 py-1 text-white text-sm;
+            }
+        }
+    }
+}
