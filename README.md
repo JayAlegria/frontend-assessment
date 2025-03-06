@@ -1,6 +1,6 @@
 # Simplify Assesment 
 
-## Dependencies
+## Added Dependencies
 
 The following dependencies have been added to enhance styling and manage class names efficiently:
 
